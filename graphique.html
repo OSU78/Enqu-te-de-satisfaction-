@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>CinéVerse</title>
+
+    <!-- commentaire pour indexation par les robots de recherche-->
+    <meta name="description" content="Le site de Vidéo à la Demande spécial séances en direct">
+    <meta name="keywords" lang="fr"
+        content="CinéVerse, streaming, séance en direct, séance, cinéma, streaming en direct, film en direct">
+    <meta name="Author" content="Catherine Rasser, Ousmane Salamatao, Aymen Haily">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <link href="style/style.css" rel="stylesheet" type="text/css">
+    <link href="style/form.css" rel="stylesheet" type="text/css">
+
+
+    <link rel="shortcut icon" href="image/icone.ico" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+</head>
+
+
+<body class="body">
+    <header>
+        <!--bandeau fixe-->
+        <div class="sticky">
+            <!-- logo renvoyant vers la page d'accueil -->
+            <div class="tooltip">
+
+                <a href="index.php"><img class="logo" src="image/logo.png" width="220"></a>
+            </div>
+            <ul class="topnav">
+                <li style="display:inline"><a href="index.php">Accueil</a></li>
+                <li style="display:inline"><a class="active" href="enquete.html">Enquête de satisfaction</a></li>
+            </ul>
+    </header>
+    <div id="userInfo"></div>
+
+
+    <main id="linearGr">
+        <div id="flexDivChart">
+            <aside class="cardChart">
+                <center>
+                   <a href="graphique1.html" title="Cliquer pour voir le graphique en solo"><h2 class="graph1"> </h2></a>
+                </center>
+
+                <canvas id="graphique1" width="500" height="400"></canvas>
+
+            </aside>
+            <aside class="cardChart">
+                <center>
+                <a href="graphique2.html" title="Cliquer pour voir le graphique en solo">
+                    <h2 class="graph2"> </h2></a>
+                </center>
+                <canvas id="graphique2" width="500" height="400"></canvas>
+
+            </aside>
+            <aside class="cardChart">
+                <center>
+                    <a href="graphique3.html" title="Cliquer pour voir le graphique en solo"><center>
+                    <h2 class="graph3"> </h2></a>
+                </center>
+
+                <canvas id="graphique3" width="500" height="400"></canvas>
+
+            </aside>
+
+        </div>
+        <br><br>
+
+
+        <!--COOKIE PARTIE-->
+      <div class="cookie-consent-banner">
+        <div class="cookie-consent-banner__inner">
+          <div class="cookie-consent-banner__copy">
+            <div class="cookie-consent-banner__header">NOTIFICATION COOKIES 🔔</div>
+            <div class="cookie-consent-banner__description inlineContent">
+              <div>
+                <p>Ce site utilise des cookies pour vous offrir une meilleure expérience..</p>
+              </div>
+
+              <div class="cookie-consent-banner__actions action">
+                <a href="#" class="cookie-consent-banner__cta" onclick="acceptCookie()">
+                  Accepter
+                </a>
+
+                <a href="#" class="cookie-consent-banner__cta cookie-consent-banner__cta--secondary" onclick="refuseCookie()">
+                  Refuser
+                </a>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+
+<!---->
+    </main>
+    <!--ESPACE RESERVER AU SCRIPT-->
+    
+  <script src="js/cookie.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.min.js"></script>
+    <script src="js/oparse.js"></script>
+    <script>
+        goToGraphique(1,"graphique1","graph1");
+        
+        goToGraphique(2,"graphique2","graph2");
+            
+        goToGraphique(3,"graphique3","graph3")
+    </script>
+
+    <!--///-->
+    <footer>
+        <!--bandeau footer-->
+        <div class="footer">
+            <!-- logo renvoyant vers la page d'accueil -->
+            <p style="margin-left: 15px;">CinéVerse Copyright@2020 by Os. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

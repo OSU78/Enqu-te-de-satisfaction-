@@ -1,0 +1,186 @@
+      .cookie-consent-banner {
+      	overflow-y: none;
+      	overflow-x: none;
+      	transition: 0.5s;
+          position: fixed;
+          bottom: 0;
+          left: 0;
+          z-index: 2147483645;
+          box-sizing: border-box;
+          display: none;
+          width: 100%;
+          box-shadow: 0px -8px 20px rgba(0,0,0,0.10);
+          background-color: #F1F6F4;
+          animation-duration: 1.2s;
+          transition: all 0.7s;
+          animation-name: CookieApparution;
+          animation-fill-mode: forwards;
+          
+          transition-timing-function: cubic-bezier(1, 0, 0, 1);
+        }
+        }
+
+        .cookie-consent-banner__inner {
+          max-width: 960px;
+          margin: 0 15px;
+
+          padding: 23px 15px;
+        }
+
+        .cookie-consent-banner__copy {
+          margin-bottom: 16px;
+          padding: 0px 15px;
+        }
+
+        .cookie-consent-banner__actions {}
+
+        .cookie-consent-banner__header {
+          margin-bottom: 8px;
+
+          font-family: "CeraPRO-Bold", sans-serif, arial;
+          font-weight: normal;
+          font-size: 16px;
+          line-height: 24px;
+        }
+
+        .cookie-consent-banner__description {
+          font-family: "CeraPRO-Regular", sans-serif, arial;
+          font-weight: normal;
+          color: #838F93;
+          font-size: 16px;
+          line-height: 24px;
+        }
+
+        .cookie-consent-banner__cta {
+          box-sizing: border-box;
+          display: inline-block;
+          min-width: 164px;
+          padding: 11px 13px;
+
+          border-radius: 2px;
+          border: 1.5px solid #B80000;
+          background-color: #B80000;
+
+          color: #FFF;
+          text-decoration: none;
+          text-align: center;
+          font-family: "CeraPRO-Regular", sans-serif, arial;
+          font-weight: normal;
+          font-size: 16px;
+          line-height: 20px;
+          transition: all 0.5s;
+        }
+
+        .cookie-consent-banner__cta--secondary {
+          padding: 9px 13px;
+
+          border: 1.5px solid #B80000;
+
+          background-color: transparent;
+
+          color: #B80000;
+        }
+
+        .cookie-consent-banner__cta:hover {
+
+          background-color: #FFFF;
+          color: #B80000;
+          box-shadow: 0px 8px 10px #D4D2D2;
+          transition: all 0.3s;
+        }
+
+        .cookie-consent-banner__cta--secondary:hover {
+          border-color: black;
+
+          background-color: transparent;
+
+          color: black;
+          transition: all 0.3s;
+        }
+
+        .cookie-consent-banner__cta:last-child {
+          margin-left: 16px;
+        }
+
+        .inlineContent {
+          display: flex;
+          flex: 1 1;
+
+        }
+
+        .action {
+          margin-left: 10%;
+        }
+
+        .HiddenCookie {
+          position: fixed;
+          bottom: 0;
+          left: 0;
+          z-index: 2147483645;
+          box-sizing: border-box;
+          width: 100%;
+
+          background-color: #F1F6F4;
+          animation-duration: 0.7s;
+          transition: all 0.7s;
+          animation-name: hidCookie;
+          animation-fill-mode: forwards;
+          transition-timing-function: cubic-bezier(1, 0, 0, 1);
+        }
+
+        @keyframes hidCookie {
+          from {
+            opacity: 1;
+          }
+
+          to {
+            opacity: 0.2;
+            -moz-transform: translate(0px, 450px);
+            -webkit-transform: translate(0px, 450px);
+            -o-transform: translate(0px, 450px);
+            -ms-transform: translate(0px, 450px);
+            transform: translate(0px, 450px);
+            display: none;
+          }
+        }
+
+
+        @keyframes CookieApparution {
+          from {
+            opacity: 0;
+             -moz-transform: translate(0px, 150px);
+            -webkit-transform: translate(0px, 150px);
+            -o-transform: translate(0px, 150px);
+            -ms-transform: translate(0px, 150px);
+            transform: translate(0px, 150px);
+           
+          }
+
+          to {
+            opacity: 1;
+            -moz-transform: translate(0px, 0px);
+            -webkit-transform: translate(0px, 0px);
+            -o-transform: translate(0px, 0px);
+            -ms-transform: translate(0px, 0px);
+            transform: translate(0px, 0px);
+            
+          }
+        }
+
+
+@media screen and (max-width:940px) {
+	.action {
+          margin-left: 1%;
+        }
+ 
+}
+
+
+@media screen and (max-width:866px) {
+	.cookie-consent-banner__cta{
+margin-bottom: 20px;
+font-size: 12px;
+min-width: 0px;
+	}
+ 
+}

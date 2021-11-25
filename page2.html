@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<!-- page d'accueil -->
+
+<html>
+
+<!-- en-tete technique-->
+
+<head>
+  <meta charset="utf-8">
+  <title>CinéVerse</title>
+
+  <!-- commentaire pour indexation par les robots de recherche-->
+  <meta name="description" content="Le site de Vidéo à la Demande spécial séances en direct">
+  <meta name="keywords" lang="fr"
+    content="CinéVerse, streaming, séance en direct, séance, cinéma, streaming en direct, film en direct">
+  <meta name="Author" content="Catherine Rasser, Ousmane Salamatao, Aymen Haily">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+  <link href="style/style.css" rel="stylesheet" type="text/css">
+  <link href="style/form.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" type="text/css" href="style/cookie.css">
+
+  <link rel="shortcut icon" href="image/icone.ico" />
+  <!-- <script type="text/javascript" src="javascript/script.js"></script>-->
+</head>
+
+
+<body class="body">
+  <header>
+    <!--bandeau fixe-->
+    <div class="sticky">
+      <!-- logo renvoyant vers la page d'accueil -->
+      <div class="tooltip">
+
+        <a href="index.php"><img class="logo" src="image/logo.png" width="220"></a>
+      </div>
+
+      <ul class="topnav">
+        <li style="display:inline"><a href="index.php">Accueil</a></li>
+        <li style="display:inline"><a class="active" href="enquete.html">Enquête de satisfaction</a></li>
+      </ul>
+  </header>
+  <div id="userInfo"></div>
+
+
+  <main>
+    <div class="contenu">
+      <center>
+        <h2>Enquête de satisfaction</h2>
+      </center>
+      </br>
+
+      <fieldset class="card">
+        <legend align="center">2/3</legend>
+        <div class="container"></br>
+
+          <form action="page3.html" name="page2">
+            <label for="nom">À quelle fréquence vous rendez-vous sur CinéVerse ?</label>
+            <select id="freq">
+              <option>Tous les jours</option>
+              <option>Une fois par semaine</option>
+              <option>Deux fois par mois</option>
+              <option>Une fois par mois</option>
+              <option>Moins d'une fois par mois</option>
+            </select>
+
+            <br><br>
+            <label for="nom">Quels sont les aspects qui vous donnent envie de revenir sur le site ?</label><br>
+            <input type="checkbox" id="qualite" name="qualite" value="qualite">
+            <label for="qualite">La qualité du service</label>
+            <input type="checkbox" id="ergonomie" name="ergonomie" value="ergonomie">
+            <label for="ergonomie">Son ergonomie</label>
+            <input type="checkbox" id="design" name="design" value="design">
+            <label for="design">Son design</label> 
+
+            <br><br>
+            <label for="nom">A combien recommanderiez-vous notre site internet à un proche ?</label><br>
+            <input type="range" min="0" max="4" value="0" step="1" name="eval" list="eval" class="slider">
+            <datalist id="eval">
+              <option value="1">
+              <option value="2">
+              <option value="3">
+              <option value="4">
+            </datalist>
+            <div id="sliderEmote" style="margin-top:10px">
+              <aside> <img src="image/Sad.png" alt="" width="32px"></aside>
+              <aside> <img src="image/confused.png" alt="" width="32px"></aside>
+              <aside> <img src="image/smiling.png" alt="" width="32px"></aside>
+              <aside> <img src="image/happy.png" alt="" width="32px"></aside>
+              <aside> <img src="image/in-love.png" alt="" width="32px"></aside>
+            </div>
+
+            <br><br>
+
+            <label for="nom">Notre site internet a-t-il répondu à toutes vos attentes ?</label><br>
+            <input type="radio" id="attentes" name="oui" value="10" checked="checked">
+            <label for="attentes" >Oui</label>
+            <input type="radio" id="attentes" name="moyen" value="5">
+            <label for="attentes">Moyennement</label>
+            <input type="radio" id="attentes" name="non" value="0">
+            <label for="attentes">Non</label><br>
+
+            <br>
+            <label for="nom">Globalement, êtes-vous satisfait de votre visite sur CinéVerse ?</label>
+            <input type="range" min="0" max="4" value="0" step="1" id="visite" list="visite" class="slider">
+            <datalist id="visite">
+              <option value="1">
+              <option value="2">
+              <option value="3">
+              <option value="4">
+            </datalist>
+            <div id="sliderEmote" style="margin-top:10px">
+              <aside> <img src="image/Sad.png" alt="" width="32px"></aside>
+              <aside> <img src="image/confused.png" alt="" width="32px"></aside>
+              <aside> <img src="image/smiling.png" alt="" width="32px"></aside>
+              <aside> <img src="image/happy.png" alt="" width="32px"></aside>
+              <aside> <img src="image/in-love.png" alt="" width="32px"></aside>
+            </div>
+
+
+
+            <br><br>
+            <center><button  class="button" onclick="page2Verif()" ><span>Suite</span></button></center>
+          </form>
+        </div>
+      </fieldset>
+
+    </div>
+
+    <br><br>
+    
+    </div>
+
+
+
+    <!--COOKIE PARTIE-->
+      <div class="cookie-consent-banner">
+        <div class="cookie-consent-banner__inner">
+          <div class="cookie-consent-banner__copy">
+            <div class="cookie-consent-banner__header">NOTIFICATION COOKIES 🔔</div>
+            <div class="cookie-consent-banner__description inlineContent">
+              <div>
+                <p>Ce site utilise des cookies pour vous offrir une meilleure expérience..</p>
+              </div>
+
+              <div class="cookie-consent-banner__actions action">
+                <a href="#" class="cookie-consent-banner__cta" onclick="acceptCookie()">
+                  Accepter
+                </a>
+
+                <a href="#" class="cookie-consent-banner__cta cookie-consent-banner__cta--secondary" onclick="refuseCookie()">
+                  Refuser
+                </a>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+
+<!---->
+  </main>
+  <script src="js/notes.js"></script>
+  <script src="js/cookie.js"></script>
+  <script src="js/enquete.js"></script>
+
+  <footer>
+    <!--bandeau footer-->
+    <div class="footer">
+      <!-- logo renvoyant vers la page d'accueil -->
+      <p style="margin-left: 15px;">CinéVerse Copyright@2020 by Os. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+
+
+</body>
+
+</html>

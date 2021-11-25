@@ -1,0 +1,363 @@
+div.fullscreen {
+  background: linear-gradient(#F50000, #B80000);
+}
+
+
+
+.SuiteLinearGrad {
+  background: linear-gradient(#B80000, #8f0404);
+}
+
+/*bandeau*/
+
+div.sticky {
+  position: -webkit-sticky;
+  /*position: sticky;
+    top: 0;*/
+  background-color: transparent;
+  font-size: 20px;
+  border-radius: 5px 5px 25px 25px;
+}
+
+/*footer*/
+
+.footer {
+  bottom: 0;
+  left: 0;
+  vertical-align: middle;
+  line-height: 60px;
+  background-color: #232323;
+  font-size: 15px;
+  color: #FFFFFF;
+  width: 100%;
+}
+
+* {
+  margin: 0px;
+  font-family: source sans pro;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  height: 100%;
+}
+
+main {
+  position: relative;
+  min-height: 100%;
+  background-color: #eae8e8;
+}
+
+header {
+  background-color: white;
+}
+
+/*bord des images courbe*/
+
+.global img {
+  border-radius: 50px;
+}
+
+.table {
+  font: 18px/1.5 sans-serif;
+  padding: 1em 2em 1em 2em;
+  color: rgb(255, 255, 255);
+  padding-bottom: 20vh;
+  padding-top: 10vh;
+  transition: none;
+}
+
+.card {
+  border: 1px solid #ebebeb;
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+  border-radius: 15px;
+  width: 125px;
+  padding: 2vh;
+  margin-top:25px ;
+  margin-left:10px ;
+  margin-right: 10px;
+}
+
+.card:hover {
+  box-shadow: 0 8px 15px 0 rgba(98, 94, 94, 0.3);
+}
+
+
+
+.topnav {
+  overflow: hidden;
+  background-color: transparent;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 22px;
+  font-weight: 480;
+  letter-spacing: 0.5px;
+  border-bottom: 3px solid transparent;
+}
+
+.topnav a:hover {
+  border-bottom: 3px solid white;
+}
+
+.topnav a.active {
+  border-bottom: 3px solid white;
+}
+
+h2 {
+  margin-top: 1rem;
+  
+}
+
+
+#h1Index {
+  
+  font-weight: 500;
+}
+
+.mobileImg {
+  border: 2px solid black;
+  margin-left: 130px;
+  margin-top: 20px;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px 0 rgba(7, 7, 7, 7);
+  border: 1px solid rgba(255, 0, 0, 0.01);
+}
+
+.laptopImg {
+  border: 2px solid black;
+  position: absolute;
+  z-index: 4;
+  margin-left: 70px;
+  margin-bottom: 10px;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px 0 rgba(7, 7, 7, 7);
+  border: 1px solid rgba(255, 0, 0, 0.01);
+}
+
+.tvImg {
+  border: 2px solid black;
+  margin-top: -130px;
+  position: absolute;
+  z-index: 2;
+  margin-left: 300px;
+  box-shadow: 0 4px 10px 0 rgba(7, 7, 7, 7);
+  border: 1px solid rgba(255, 0, 0, 0.01);
+  transition: none;
+}
+.tvImgMobile{
+  visibility: hidden;
+   border: 2px solid black;
+  margin-top: -130px;
+  position: absolute;
+  z-index: 2;
+  margin-left: 300px;
+  box-shadow: 0 4px 10px 0 rgba(7, 7, 7, 7);
+  border: 1px solid rgba(255, 0, 0, 0.01);
+  transition: none;
+
+}
+
+#flexDiv {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5%;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-bottom: 5%;
+}
+
+#flexDiv a {
+  color: black;
+  text-decoration: none;
+}
+
+.linearGr {
+  background: linear-gradient(to bottom, #eae8e8 0%, #dfdcdc 43%, #f1f1f1 100%);
+  ;
+}
+
+.btn-success {
+  transition: none;
+  border: 1px solid #9b9a9a;
+  font-weight: bold;
+  font-size: 25px;
+  letter-spacing: 0.8px;
+  padding: 20px 35px;
+  text-decoration: none;
+  color: white;
+  background: linear-gradient( to bottom, #00f900 0%, #3ab933 43%, #43a537 63%, #09802c 100%);
+  margin-left: 80vh;
+}
+
+.btn-success:hover {
+  transition: 0.2s;
+  letter-spacing: 0.8px;
+  padding: 20px 35px;
+  text-decoration: none;
+  color: white;
+  box-shadow: 0 5px 6px rgba(0, 0, 0, 0.8);
+  background: linear-gradient( to bottom, #329d47 0%, #79d168 43%, #45c518 62%, #b7ffac 100%);
+}
+
+.dynamicSection {
+  transition: none;
+  margin-left: 235px;
+}
+
+@media screen and (max-width:1504px) {
+  .dynamicSection {
+    margin-left: 0px;
+  }
+}
+
+@media screen and (max-width:1179px) {
+  .dynamicSection {
+    margin-left: -125px;
+  }
+  #h1Index {
+    margin-bottom: -25px;
+  }
+  .table {
+    padding-top: 55px;
+   
+  }
+  .dynamicSection {
+    margin-left: -125px;
+    margin-top: 155px;
+  }
+}
+
+
+@media screen and (max-width:1059px) {
+ .mobileImg{
+display: none;
+ }
+ .laptopImg{
+   display: none;
+ }
+ .tvImg{
+   margin-left: 125px;
+ }
+ .asideP{
+   margin-top: 125px;
+   
+ }
+ .btn-success{
+   margin-left: 17vh;
+ }
+}
+@media screen and (max-width:666px) {
+  .tvImg{
+    display: none;
+
+  }
+ .tvImgMobile{
+  visibility: visible;
+  margin-left: 17vh
+ }
+ .asideP{
+  margin-top: 15px;
+ }
+
+}
+
+
+
+
+
+.cookie-consent-banner {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 2147483645;
+  box-sizing: border-box;
+  width: 100%;
+
+  background-color: #F1F6F4;
+}
+
+.cookie-consent-banner__inner {     
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 32px 0;
+}
+
+.cookie-consent-banner__copy { 
+  margin-bottom: 16px;
+}
+
+.cookie-consent-banner__actions {    
+}
+
+.cookie-consent-banner__header {
+  margin-bottom: 8px;
+  
+  font-family: "CeraPRO-Bold", sans-serif, arial;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.cookie-consent-banner__description {
+  font-family: "CeraPRO-Regular", sans-serif, arial;
+  font-weight: normal;
+  color: #838F93;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.cookie-consent-banner__cta {
+  box-sizing: border-box;
+  display: inline-block;
+  min-width: 164px;
+  padding: 11px 13px;
+    
+  border-radius: 2px;
+  
+  background-color: #2CE080;
+   
+  color: #FFF;
+  text-decoration: none;
+  text-align: center;
+  font-family: "CeraPRO-Regular", sans-serif, arial;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.cookie-consent-banner__cta--secondary { 
+  padding: 9px 13px;
+  
+  border: 2px solid #3A4649;
+  
+  background-color: transparent;
+  
+  color: #2CE080;
+}
+
+.cookie-consent-banner__cta:hover {
+  background-color: #20BA68;
+}
+
+.cookie-consent-banner__cta--secondary:hover {
+  border-color: #838F93;
+    
+  background-color: transparent;
+  
+  color: #22C870;
+}
+
+.cookie-consent-banner__cta:last-child {
+  margin-left: 16px;
+}

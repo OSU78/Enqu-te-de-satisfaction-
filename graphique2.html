@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>CinéVerse</title>
+
+  <!-- commentaire pour indexation par les robots de recherche-->
+  <meta name="description" content="Le site de Vidéo à la Demande spécial séances en direct">
+  <meta name="keywords" lang="fr"
+    content="CinéVerse, streaming, séance en direct, séance, cinéma, streaming en direct, film en direct">
+  <meta name="Author" content="Catherine Rasser, Ousmane Salamatao, Aymen Haily">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+  <link href="style/style.css" rel="stylesheet" type="text/css">
+  <link href="style/form.css" rel="stylesheet" type="text/css">
+  <link rel="shortcut icon" href="image/icone.ico" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+</head>
+
+
+<body class="body">
+  <header>
+    <!--bandeau fixe-->
+    <div class="sticky">
+      <!-- logo renvoyant vers la page d'accueil -->
+      <div class="tooltip">
+
+        <a href="index.php"><img class="logo" src="image/logo.png" width="220"></a>
+      </div>
+      <ul class="topnav">
+        <li style="display:inline"><a href="index.php">Accueil</a></li>
+        <li style="display:inline"><a class="active" href="enquete.html">Enquête de satisfaction</a></li>
+      </ul>
+  </header>
+  <div id="userInfo"></div>
+
+
+  <main>
+    <div class="contenu">
+      <center>
+        <h2 class="graph2"> </h2>
+      </center>
+      </br>
+
+      <div class="card">
+        <div class="container"></br>
+
+          <canvas id="graphique2" width="500" height="400"></canvas>
+        </div>
+        <center style="margin-bottom: 25px;">
+          <a href="graphique3.html" class="button button2" ><span>suivant</span></a>
+        </center>
+      </div>
+    </div>
+    <br><br>
+    </div>
+  </main>
+  <!--ESPACE RESERVER AU SCRIPT-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.min.js"></script>
+  <script src="js/oparse.js"></script>
+  <script>goToGraphique(2,"graphique2","graph2");</script>
+
+  <!--///-->
+  <footer>
+    <!--bandeau footer-->
+    <div class="footer">
+      <!-- logo renvoyant vers la page d'accueil -->
+      <p style="margin-left: 15px;">CinéVerse Copyright@2020 by Os. All Rights Reserved.</p>
+    </div>
+  </footer>
+</body>
+
+</html>
